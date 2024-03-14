@@ -100,6 +100,8 @@ async function connect() {
       `New block with number: ${header.number.toNumber()} and hash: ${header.hash.toHex()}`,
     );
   });
+
+  console.log(unsub)
 }
 
 connect().catch(console.error);
